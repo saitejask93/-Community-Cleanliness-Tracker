@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Cleanliness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Community Cleanliness Tracker</h1>
+    <p>Report cleanliness issues and help keep our community clean!</p>
+  </header>
+
+  <main>
+    <section class="report-section">
+      <h2>📝 Report an Issue</h2>
+      <form id="reportForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required />
+
+        <label for="issue">Describe the Issue:</label>
+        <textarea id="issue" rows="3" required></textarea>
+
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+
+    <section class="reports-display">
+      <h2>📋 Reported Issues</h2>
+      <div id="reportsList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by [Your Name] | © 2025 Clean Community Initiative</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
